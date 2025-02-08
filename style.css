@@ -1,0 +1,588 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    padding-top: 3.2rem;
+}
+
+
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+
+
+.drawer-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.drawer-content .play_header {
+    /* border: 1px solid; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.drawer-content .types {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.drawer-content .types p {
+    color: rgb(95, 99, 104);
+    font-weight: 500;
+}
+
+
+
+.drawer-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    text-align: start;
+    margin-bottom: 8px;
+}
+
+.drawer-header .image {
+    /* border: 1px solid red; */
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #00000065;
+    margin-right: 8px;
+}
+
+.app-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #110187;
+    margin: 0;
+}
+
+.company-name {
+    font-size: .9rem;
+    color: #01875f;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.drawer-stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+    margin: 0px 20px;
+}
+
+.drawer-stats div h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.drawer-stats div p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.download-apk-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.download-apk-btn:hover {
+    background-color: darkgreen;
+}
+
+.drawer-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 25px;
+    margin-top: 15px;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
+.drawer-images::-webkit-scrollbar {
+    display: none;
+}
+
+.drawer-img {
+    height: 230px;
+    width: 120px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.drawer-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+.drawer-content .about {
+    margin-top: 16px;
+}
+
+.drawer-content .about h4 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: rgb(40, 40, 41);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.drawer-content .about p {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #5f6368;
+}
+
+/* review styles  */
+.review-container {
+    background: white;
+    padding: 4px;
+
+
+}
+
+.user-info {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: 400;
+    color: #202124;
+    font-size: 1.25rem;
+}
+
+.date-stars {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.date {
+    color: #5F6368;
+    font-size: 14px;
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin-left: 5px;
+}
+
+.stars {
+    font-size: 14px;
+}
+
+.stars .fa-star {
+    color: rgb(241, 243, 244);
+}
+
+.stars .fa-star.active {
+    color: green;
+}
+
+.review-text {
+    font-size: .875rem;
+    margin-top: 8px;
+    letter-spacing: .0142857143em;
+    line-height: 1.25rem;
+    overflow-wrap: anywhere;
+    color: rgb(95, 99, 104);
+    /* width: 65%; */
+    /* margin: auto; */
+    /* border: 1px solid red; */
+
+
+}
+
+.helpful {
+    font-size: 13px;
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.feedback {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.feedback button {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.yes:hover {
+    background-color: #e0f3e0;
+    color: green;
+}
+
+.no:hover {
+    background-color: #e0f3e0;
+    color: green;
+}
+
+.no {
+    background-color: #f0f0f0;
+}
+
+/* end review styles  */
+
+
+
+/* image modal styles  */
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation Buttons */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.drawer-images img {
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.drawer-images img:hover {
+    transform: scale(1.1);
+}
+
+/* image modal styles end  */
+
+
+
+.drawer-content .whats_new {
+    margin: 20px 0;
+}
+
+.drawer-content .whats_new h4,
+.drawer-content .app_support h4
+ {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #5f6368;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.drawer-content .whats_new>p {
+    margin: 20px 0;
+    color: #5f6368;
+}
+
+
+.drawer-content .whats_new .texts>p {
+    color: #5f6368;
+    margin-bottom: 4px;
+}
+
+.drawer-content .app_support .similer_ {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.drawer-content .app_support .similer_>h4 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #5f6368;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.drawer-content .a_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column layout */
+    gap: 15px;
+    /* Space between items */
+    width: 100%;
+    max-width: 600px;
+    /* Adjust width as needed */
+    margin: auto;
+    /* Centering the container */
+}
+
+
+.drawer-content .a_wrapper .box {
+    display: flex;
+    padding: 8px;
+    border-radius: 8px;
+}
+.drawer-content .a_wrapper .box:hover{
+    background: rgba(128, 128, 128, 0.151) ;
+    padding: 8px;
+}
+
+.drawer-content .a_wrapper .box .image {
+    width: fit-content;
+    box-shadow: 1px 1px 2px #00000065;
+    padding: 4px;
+    border-radius: 9px;
+    margin-right: 18px;
+}
+
+.drawer-content .a_wrapper .box .labels {
+    display: flex;
+    flex-direction: column;
+}
+
+.drawer-content .a_wrapper .box .labels> p {
+    color: #202124;
+    font-weight: 400;
+    letter-spacing: .0142857143;
+    line-height: 1.25rem;
+    letter-spacing: -.2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .875;
+}
+
+.drawer-content .a_wrapper .box .labels>small {
+    color: #202124;
+    line-height: 1rem;
+    font-size: .75rem;
+    margin-top: 6px;
+    font-weight: 400;
+    letter-spacing: -.2px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.drawer-content .a_wrapper .box .labels .rating>i {
+    color: gray;
+    font-size: 10px;
+}
+
+
+.drawer-content footer .item1 h4{
+    font-weight: 500;
+    font-size: 16px;
+    color: #5f6368;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+.drawer-content footer{
+    margin-top: 20px;
+}
+
+.drawer-content footer .item1 .items > p{
+   padding: 6px 2px;
+   font-weight: 400;
+   font-size: 14px;
+   color: #5f6368;
+
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.drawer-content footer > .terms{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.drawer-content footer > .terms > p, 
+.drawer-content footer > .terms > .img span {
+    color: #5f6368;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+
+.drawer-content footer > .terms > .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .drawer-content {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .app-title {
+        font-size: 1.5rem;
+    }
+
+    .drawer-images {
+        gap: 10px;
+    }
+
+    .download-apk-btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+
+
+
+/* loading styles  */
+
+
+  
+  /* Modal Styling */
+  .modalLoading {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(236, 234, 234, 0.119);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Loader Animation */
+  .loader {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+/* loading styles end */

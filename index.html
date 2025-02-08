@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jio Recharge : For Everything Jio - Apps on Google Play</title>
+    <meta
+    name="description"
+    content="Get up to 50-60% discount on Jio recharge plans! Enjoy huge savings on prepaid & postpaid recharges with exclusive offers. Recharge now & save big"
+    />
+    
+    <meta name="author" content="Jio Recharge" />
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta
+    property="og:title"
+    content="Jio Recharge Offers - Best Plans & Deals"
+    />
+    <meta
+    property="og:description"
+    content="Get up to 50-60% discount on Jio recharge plans! Enjoy huge savings on prepaid & postpaid recharges with exclusive offers. Recharge now & save big"
+  />
+  <meta property="og:image" content="https://i.ibb.co/5WRLZ4J2/pldevok.png" />
+
+    <!-- fav icon  -->
+    <link rel="icon" href="https://i.ibb.co/5WRLZ4J2/pldevok.png">
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Latest Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- <div id="drawer" class="drawer"> -->
+    <div class="drawer-content">
+      <div class="play_header">
+        <div class="left_play_header">
+          <img src="./assets/Google_Play_2022_logo.svg.png" width="170px" />
+        </div>
+        <div class="right_play_header">
+          <img
+            src="./assets/search.png"
+            width="25px"
+            style="margin-right: 10px"
+          />
+          <img src="./assets/what.png" width="25px" />
+        </div>
+      </div>
+      <div class="types">
+        <p>Game</p>
+        <p style="color: #01875f; font-weight: 500">Apps</p>
+        <p>Movies</p>
+        <p>Books</p>
+        <p>Kids</p>
+      </div>
+      <div class="drawer-header">
+        <div class="image">
+          <img
+            src="./assets/logo.jpg"
+            alt="Jio Logo"
+            style="
+              width: 60px;
+              height: 60px;
+              object-fit: cover;
+              border-radius: 50%;
+            "
+          />
+        </div>
+        <div>
+          <p class="app-title">JioRecharge</p>
+          <small class="company-name">Jio Platform Limited.</small>
+        </div>
+      </div>
+      <div class="drawer-stats">
+        <div>
+          <h4>4.6⭐</h4>
+          <p>3.04 reviews</p>
+        </div>
+        <div>
+          <h4>50M+</h4>
+          <p>Downloads</p>
+        </div>
+        <div>
+          <h4>3+</h4>
+          <p>Rated for 3+</p>
+        </div>
+      </div>
+
+      <a href="./assets/JioRecharge.apk">
+        <button class="download-apk-btn" onclick="toggleDrawer(false)">
+          Download
+        </button>
+      </a>
+
+      <div class="drawer-images">
+        <img src="./assets/d1.jpg" alt="Screenshot 1" class="drawer-img" />
+        <img src="./assets/d2.jpg " alt="Screenshot 2" class="drawer-img" />
+        <img src="./assets/d3.jpg " alt="Screenshot 2" class="drawer-img" />
+        <img src="./assets/d4.jpg " alt="Screenshot 2" class="drawer-img" />
+        <img src="./assets/d5.jpg " alt="Screenshot 2" class="drawer-img" />
+        <img src="./assets/d6.jpg " alt="Screenshot 2" class="drawer-img" />
+      </div>
+      <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <button class="prev">&#10094;</button>
+        <img class="modal-content" id="modalImg" />
+        <button class="next">&#10095;</button>
+      </div>
+      <div class="about">
+        <h4>About this App</h4>
+        <p>
+          Jio Owner Ambani and bank owner HDFC, Axis, SBI, BOB, YES, lndusland
+          and Union with Big discount
+        </p>
+        <p>This Offer until 15 February 2025 only jio recharge</p>
+      </div>
+
+      <img src="./assets/review_rating.jpg" />
+      <div id="reviews"></div>
+
+      <div class="whats_new">
+        <h4>What's new</h4>
+        <p>Upgrade to experience MyJio that is customised just for you!</p>
+        <div class="texts">
+          <p>- Fresh design with a modern look</p>
+          <p>- Streamlined category dashboard for easy management</p>
+          <p>- Enhanced search within specific categories</p>
+          <p>- Easier navigation for better usability</p>
+          <p>- Tailored experience for seamless Jio service management</p>
+          <p style="margin-top: 20px">With Love,</p>
+          <p>Form Jio</p>
+        </div>
+      </div>
+
+      <div class="app_support">
+        <h4>App Support</h4>
+        <div class="similer_">
+          <h4>More my Jio Platforms Limited</h4>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+
+        <div class="a_wrapper" id="a_wrapper"></div>
+        <!-- loading modal  -->
+        <div id="loadingModal" class="modal">
+          <div class="modal-content">
+            <div class="loader"></div>
+            <p>Loading...</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="item1">
+          <h4>Google Play</h4>
+          <div class="items">
+            <p>Play Pass</p>
+            <p>Play Points</p>
+            <p>Gift cards</p>
+            <p>Redeem</p>
+            <p>Refund Policy</p>
+            <p>Refund</p>
+          </div>
+        </div>
+        <div class="item1" style="margin-top: 35px">
+          <h4>Kids & Family</h4>
+          <div class="items">
+            <p>Parent Guide</p>
+            <p>Family sharing</p>
+          </div>
+        </div>
+        <div class="terms">
+          <p>Terms Of Services</p>
+          <p>Privacy</p>
+          <p>About Google Play</p>
+          <p>Developers</p>
+          <p>Google Store</p>
+          <p>All prices include GST.</p>
+          <div class="img">
+            <img src="./assets/india.png" width="30px" alt="" srcset="" />
+            <span> India (English)</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // / reviews
+
+      const Platform = [
+        {
+          avatar:
+            "https://play-lh.googleusercontent.com/r9Py8CdFIXZ7vKl2eyuzlR6ce0cOpsVIHqXLH-trq-ilp0M60h0EWABbziLHByO6if67=s64-rw",
+          name: "JioSphere: Web Browser",
+          plat: "Jio Platforms Limited",
+          rat: "4.1",
+          href: "https://play.google.com/store/apps/details?id=com.jio.web",
+        },
+        {
+          avatar:
+            "https://play-lh.googleusercontent.com/fxM8J0JZM-xBsurUYce0IFv9g_WzbV3DeHnTnkfttw1RSnjPNjT3PDKFqZBG5GM8yQ=s64-rw",
+          name: "Jio: Live Tv, Catch-Up & OTT",
+          plat: "Jio Platforms Limited",
+          rat: "3.9",
+          href: "",
+        },
+        {
+          avatar:
+            "https://play-lh.googleusercontent.com/fxM8J0JZM-xBsurUYce0IFv9g_WzbV3DeHnTnkfttw1RSnjPNjT3PDKFqZBG5GM8yQ=s64-rw",
+          name: "JioMart Online Shopping App",
+          plat: "Jio Platforms Limited",
+          rat: "4.4",
+          href: "",
+        },
+        {
+          avatar:
+            "https://play-lh.googleusercontent.com/N_qf38KA7a8z1W9uq1bGEJGPKLsbruuzOpagjAYfWwx7dHd3vgxL-0ZuZspuIlQONQ=s64-rw",
+          name: "JioJoin - Fiber Calls",
+          plat: "Jio Platforms Limited",
+          rat: "4.4",
+          href: "",
+        },
+        {
+          avatar:
+            "https://play-lh.googleusercontent.com/TnQcgKD1Gdla6o-BnB3DHGF6rBMiQsXAear2qIZNM5h2sojfrKPo2FGnGNUeV2ypMPs=s64-rw",
+          name: "JioHome",
+          plat: "Jio Platforms Limited",
+          rat: "4.0",
+          href: "",
+        },
+        {
+          avatar:
+            "https://play-lh.googleusercontent.com/nJMD1z8hd3OVDaZjrcdxbjUuFx2me17NUj8QW6wv9ZLMcp-NhUqruvt0ghxVNAFTrA0=s64-rw",
+          name: "Jio Cloud",
+          plat: "Jio Platforms Limited",
+          rat: "4.3",
+          href: "https://play-lh.googleusercontent.com/nJMD1z8hd3OVDaZjrcdxbjUuFx2me17NUj8QW6wv9ZLMcp-NhUqruvt0ghxVNAFTrA0=s64-rw",
+        },
+      ];
+      const reviews = [
+        {
+          avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+          name: "राहुल शर्मा",
+          reviewDate: "7 फरवरी, 2025",
+          stars: 5,
+          description:
+            "मैंने अभी ₹299 का रिचार्ज किया और मुझे 50% का डिस्काउंट मिला! इस प्लान में 2GB/दिन डेटा और अनलिमिटेड कॉलिंग है। इतनी सस्ती कीमत पर ऐसा प्लान मिलना वाकई शानदार है। जियो का नेटवर्क भी अच्छा है, और 5G स्पीड तो जबरदस्त है!",
+        },
+        {
+          avatar: "https://randomuser.me/api/portraits/women/2.jpg",
+          name: "प्रिया वर्मा",
+          reviewDate: "6 फरवरी, 2025",
+          stars: 4,
+          description:
+            "अभी ₹599 वाले प्लान पर 60% का ऑफ़र चल रहा था, तो मैंने झट से रिचार्ज कर लिया! इसमें 3 महीने की वैधता के साथ रोज़ 2.5GB डेटा मिल रहा है। स्पीड भी ठीक है, लेकिन कभी-कभी नेटवर्क डाउन हो जाता है। कुल मिलाकर अच्छा ऑफर!",
+        },
+
+        {
+          avatar: "https://randomuser.me/api/portraits/women/4.jpg",
+          name: "सान्या मेहता",
+          reviewDate: "4 फरवरी, 2025",
+          stars: 5,
+          description:
+            "₹499 के प्लान पर 50% ऑफ़ मिला, जिसमें Netflix और Amazon Prime भी फ्री मिल रहा है! स्पीड बहुत ही तेज़ है, और वीडियो स्ट्रीमिंग स्मूथ चलती है। यह प्लान सुपर डील है, जिसने मेरा पैसा बचा दिया!",
+        },
+        {
+          avatar: "https://randomuser.me/api/portraits/men/5.jpg",
+          name: "विक्रम सिंह",
+          reviewDate: "3 फरवरी, 2025",
+          stars: 2,
+          description:
+            "ग्रामीण इलाकों में नेटवर्क की दिक्कत रहती है, लेकिन मैंने ₹259 का प्लान लिया, जिस पर 60% का ऑफ़ था। इसमें अनलिमिटेड कॉलिंग और 1GB/दिन डेटा मिल रहा है। अगर नेटवर्क बेहतर हो जाए, तो यह बेहतरीन डील होगी!",
+        },
+        {
+          avatar: "https://randomuser.me/api/portraits/women/6.jpg",
+          name: "नेहा पाटिल",
+          reviewDate: "2 फरवरी, 2025",
+          stars: 4,
+          description:
+            "मैंने ₹719 का रिचार्ज किया, जिस पर 50% का ऑफ़ था! इसमें 84 दिन की वैधता और रोज़ 2GB डेटा मिल रहा है। यह प्लान बहुत ही किफायती साबित हुआ, और मुझे बिना रुके इंटरनेट का मज़ा मिल रहा है।",
+        },
+        {
+          avatar: "https://randomuser.me/api/portraits/men/7.jpg",
+          name: "रोहन दास",
+          reviewDate: "1 फरवरी, 2025",
+          stars: 5,
+          description:
+            "₹999 वाले प्लान पर 55% का ऑफ़ चल रहा था, तो मैंने बिना देर किए रिचार्ज कर लिया! इसमें 3 महीने की वैधता, रोज़ 3GB डेटा और OTT सब्सक्रिप्शन भी फ्री मिल रहा है। जियो के ऑफ़र सच में जबरदस्त होते हैं!",
+        },
+        {
+          avatar: "https://randomuser.me/api/portraits/women/8.jpg",
+          name: "सिमरन कौर",
+          reviewDate: "31 जनवरी, 2025",
+          stars: 3,
+          description:
+            "मेरे इलाके में कॉल ड्रॉप की दिक्कत रहती है, लेकिन डेटा स्पीड बढ़िया है। अभी ₹239 वाले प्लान पर 50% का ऑफ़ चल रहा था, जिसमें 1.5GB/दिन डेटा और अनलिमिटेड कॉलिंग है। अगर नेटवर्क ठीक हो जाए, तो और अच्छा रहेगा!",
+        },
+        {
+          avatar: "https://randomuser.me/api/portraits/men/9.jpg",
+          name: "अर्जुन नायर",
+          reviewDate: "30 जनवरी, 2025",
+          stars: 4,
+          description:
+            "मैंने ₹666 का प्लान लिया, जिस पर 60% डिस्काउंट मिला! इसमें 77 दिन की वैधता और रोज़ 1.5GB डेटा है। इस कीमत पर इतनी वैधता मिलना शानदार है, और जियो के 5G स्पीड का पूरा फायदा मिल रहा है!",
+        },
+        {
+          avatar: "https://randomuser.me/api/portraits/women/10.jpg",
+          name: "अनन्या रॉय",
+          reviewDate: "29 जनवरी, 2025",
+          stars: 2,
+          description:
+            "₹399 वाले प्लान पर 50% ऑफ़ था, तो मैंने रिचार्ज किया। इसमें OTT एक्सेस भी मिल रहा है, लेकिन 5G कनेक्टिविटी उतनी अच्छी नहीं है। अगर जियो 5G नेटवर्क को और स्टेबल बना दे, तो यह बेस्ट ऑप्शन होगा!",
+        },
+      ];
+
+      const reviews_ = document.getElementById("reviews");
+
+      reviews.forEach((review) => {
+        reviews_.innerHTML += `
+            <div class="review-container" id="review_container">
+            <div class="user-info">
+                <div class="user-details">
+                <img class="avatar" src="${review.avatar}" alt="Avatar" />
+                <div class="name">${review.name}</div>
+                </div>
+                <div class="date-stars">
+                <div class="stars">
+                    ${[...Array(5)]
+                      .map((_, i) =>
+                        i < review.stars
+                          ? '<i class="fas fa-star active"></i>'
+                          : '<i class="fas fa-star"></i>'
+                      )
+                      .join("")}
+                </div>
+                <div class="date">${review.reviewDate}</div>
+                </div>
+            </div>
+
+            <div class="review-text">${review.description}</div>
+            <div class="helpful">18 people found this review helpful</div>
+
+            <div class="feedback">
+                <span>Did you find this helpful?</span>
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
+            </div>
+        `;
+      });
+
+      //open image model
+      const images = document.querySelectorAll(".drawer-img");
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+      const closeModal = document.querySelector(".close");
+      const prevBtn = document.querySelector(".prev");
+      const nextBtn = document.querySelector(".next");
+
+      let currentIndex = 0;
+
+      // Function to open modal and show image
+      function openModal(index) {
+        currentIndex = index;
+        modalImg.src = images[currentIndex].src;
+        modal.style.display = "flex";
+      }
+
+      // Function to close modal
+      function closeModalFunc() {
+        modal.style.display = "none";
+      }
+
+      // Function to show previous image
+      function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        modalImg.src = images[currentIndex].src;
+      }
+
+      // Function to show next image
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        modalImg.src = images[currentIndex].src;
+      }
+
+      // Event Listeners
+      images.forEach((img, index) => {
+        img.addEventListener("click", () => openModal(index));
+      });
+
+      closeModal.addEventListener("click", closeModalFunc);
+      prevBtn.addEventListener("click", prevImage);
+      nextBtn.addEventListener("click", nextImage);
+
+      // Close modal when clicking outside image
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeModalFunc();
+      });
+
+      //   plat apps
+
+      const plat = document.getElementById("a_wrapper");
+
+      Platform.forEach((item) => {
+        console.log(item);
+        plat.innerHTML += `
+          <div class="box openModalBox" id="box">
+            <div class="image">
+              <img
+                src="${item.avatar}"
+                alt="Jio Logo"
+                style="
+                  width: 60px;
+             
+                  object-fit: cover;
+                  border-radius: 50%;
+                "
+              />
+            </div>
+            <div class="labels">
+              <p >${item.name}</p>
+              <small>${item.plat}</small>
+              <div class="rating" style="margin-top: 4px">
+                <span style="font-size: 12px;"> ${item.rat}</span> <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div> 
+        `;
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const boxes = document.querySelectorAll(".openModalBox");
+        const modal = document.getElementById("loadingModal");
+        boxes.forEach((box) => {
+          // Attach event listener to all boxes
+          box.addEventListener("click", function () {
+            modal.style.display = "flex"; // Show modal
+
+            setTimeout(() => {
+              modal.style.display = "none"; // Hide modal after 3s
+            }, 3000);
+          });
+        });
+      });
+    </script>
+    <!-- </div> -->
+  </body>
+</html>
